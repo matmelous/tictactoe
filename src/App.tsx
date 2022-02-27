@@ -1,56 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Game from "./Views/Game";
+import { Provider as ReduxProvider } from "react-redux";
+import store from "./state/store";
 
 function App() {
   return (
-    <div className="App">
-
-      <div className='board'>
-        <div className="background">
-          <div className="line line1"></div>
-          <div className="line line2"></div>
-          <div className="line line3"></div>
-          <div className="line line4"></div>
-        </div>
-        <div className='board-square'>
-          <div className="piece cross">
-            <div className="x1">
-              <div className="sub neon"></div>
-              <div className="sub neon"></div>
-            </div>
-            <div className="x2 neon"></div>
-          </div>
-
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-        <div className='board-square'>
-          <div className="piece round"> </div>
-        </div>
-
+    <ReduxProvider store={store}>
+      <div className="App">
+        <Game />
       </div>
-
-    </div>
+    </ReduxProvider>
   );
 }
 
