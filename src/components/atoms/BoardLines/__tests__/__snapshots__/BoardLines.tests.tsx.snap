@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gsDKAQ LsKEr"
+  >
+    <div
+      class="sc-bdvvtL gMQVwe line1"
+    />
+    <div
+      class="sc-bdvvtL gMQVwe line2"
+    />
+    <div
+      class="sc-bdvvtL gMQVwe line3"
+    />
+    <div
+      class="sc-bdvvtL gMQVwe line4"
+    />
+  </div>
+</DocumentFragment>
+`;

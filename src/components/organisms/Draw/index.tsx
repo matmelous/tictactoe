@@ -14,7 +14,6 @@ const Draw = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    console.log('winner', gameStatus.winner);
     setOpen(gameStatus.winner === false);
   }, [gameStatus.winner]);
 

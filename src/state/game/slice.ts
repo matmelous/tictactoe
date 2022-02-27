@@ -25,11 +25,6 @@ function calculateWinner(squares: squaresType) {
       return squares[a];
     }
   }
-  console.log("filled", filled);
-  if (filled === 8) {
-    console.log("retornou draw");
-    return false;
-  }
 
   return null;
 }

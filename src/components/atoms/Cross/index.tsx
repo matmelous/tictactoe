@@ -3,7 +3,7 @@ import { Arm1, Arm2, CrossStyled } from "./styles";
 
 const Cross = () => {
   return (
-    <CrossStyled>
+    <CrossStyled role="cross">
       <Arm1>
         <div className="neon"></div>
         <div className="neon"></div>
