@@ -1,24 +1,25 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import { player } from '../../../types/enums';
-import Circle from '../../atoms/Circle';
-import Cross from '../../atoms/Cross';
-import { BoardSquareStyled } from './styles';
+import React, { useEffect, useState, useCallback } from "react";
+import { player } from "../../../types/enums";
+import Circle from "../../atoms/Circle";
+import Cross from "../../atoms/Cross";
+import { BoardSquareStyled } from "./styles";
 
 type propsType = {
-  value: string | null,
-  onClick?: () => void
-}
+  value: string | null;
+  onClick?: () => void;
+  disabled: boolean;
+};
 
-const BoardSquare = ({ value, onClick }: propsType) => {
+const BoardSquare = ({ disabled, value, onClick }: propsType) => {
   const [children, setChildren] = useState<null | React.ReactNode>(null);
   const checkValue = useCallback((value: string | null) => {
     switch (value) {
       case null:
         return null;
       case player.cross:
-        return <Cross />
+        return <Cross />;
       case player.circle:
-        return <Circle />
+        return <Circle />;
       default:
         return null;
     }
@@ -29,10 +30,10 @@ const BoardSquare = ({ value, onClick }: propsType) => {
   }, [value, checkValue]);
 
   return (
-    <BoardSquareStyled onClick={onClick}>
+    <BoardSquareStyled disabled={disabled} onClick={onClick}>
       {children}
     </BoardSquareStyled>
   );
-}
+};
 
 export default BoardSquare;

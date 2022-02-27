@@ -1,8 +1,13 @@
-import { playerType } from "../../types/types";
+import { playerType, squaresType } from "../../types/types";
 
 export type gameSlice = {
   player: playerType;
-  squares: {
-    [key: number]: null | playerType;
+  player1Name: string;
+  player2Name: string;
+  winner: null | playerType | boolean;
+  squares: squaresType;
+  history: {
+    player1: number;
+    player2: number;
   };
 };

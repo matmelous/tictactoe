@@ -3,6 +3,13 @@ import { gameSlice } from "./types";
 
 export const initialState: gameSlice = {
   player: player.cross,
+  player1Name: "",
+  player2Name: "",
+  winner: null,
+  history: {
+    player1: 0,
+    player2: 0,
+  },
   squares: {
     0: null,
     1: null,

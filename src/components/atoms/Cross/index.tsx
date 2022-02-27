@@ -1,5 +1,5 @@
-import React from 'react';
-import { Arm1, Arm2, CrossStyled } from './styles';
+import React from "react";
+import { Arm1, Arm2, CrossStyled } from "./styles";
 
 const Cross = () => {
   return (
@@ -11,7 +11,6 @@ const Cross = () => {
       <Arm2 className="neon"></Arm2>
     </CrossStyled>
   );
-}
+};
 
 export default Cross;
-

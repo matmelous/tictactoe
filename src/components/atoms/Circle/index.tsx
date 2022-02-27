@@ -1,10 +1,8 @@
-import React from 'react';
-import { CircleStyled } from './styles';
+import React from "react";
+import { CircleStyled } from "./styles";
 
 const Circle = () => {
-  return (
-    <CircleStyled />
-  );
-}
+  return <CircleStyled />;
+};
 
 export default Circle;
