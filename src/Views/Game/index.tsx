@@ -2,9 +2,8 @@ import React from "react";
 import Board from "../../components/organisms/Board";
 import GameStatus from "../../components/organisms/GameStatus";
 import { Wrapper } from "./styles";
-import { GameSettings } from "../../components/organisms/GameSettings";
-import Victory from "../../components/organisms/Victory";
-import Draw from "../../components/organisms/Draw";
+import { StartGame } from "../../components/organisms/StartGame";
+import EndGame from "../../components/organisms/EndGame";
 
 function Game() {
 
@@ -12,9 +11,8 @@ function Game() {
     <Wrapper>
       <GameStatus />
       <Board />
-      <GameSettings />
-      <Victory />
-      <Draw />
+      <StartGame />
+      <EndGame />
     </Wrapper>
   );
 }

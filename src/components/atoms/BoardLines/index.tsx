@@ -2,7 +2,7 @@ import React from "react";
 import { Background, Line } from "./styles";
 
 const BoardLines = () => (
-  <Background>
+  <Background data-testid="board-lines">
     <Line className="line1"></Line>
     <Line className="line2"></Line>
     <Line className="line3"></Line>

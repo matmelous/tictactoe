@@ -9,8 +9,6 @@ import * as app from "./";
 
 export const store = configureStore({
   reducer: app.reducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({ serializableCheck: false }),
 });
 
 export const actions = app.actions;

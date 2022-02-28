@@ -4,6 +4,7 @@ exports[`renders 1`] = `
 <DocumentFragment>
   <button
     class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root sc-eCImPb fdDrdY css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+    data-testid="board-square"
     tabindex="0"
     type="button"
   >

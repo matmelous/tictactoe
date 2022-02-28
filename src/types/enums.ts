@@ -1,4 +1,4 @@
-export enum player {
+export enum MoveEnum {
   cross = "x",
   circle = "o",
 }

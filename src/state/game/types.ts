@@ -1,13 +1,17 @@
-import { playerType, squaresType } from "../../types/types";
+import { MoveType, SquaresType } from "../../types/types";
 
-export type gameSlice = {
-  player: playerType;
-  player1Name: string;
-  player2Name: string;
-  winner: null | playerType | boolean;
-  squares: squaresType;
-  history: {
-    player1: number;
-    player2: number;
-  };
+type WinnerType = null | string | boolean;
+
+export type GameSliceType = {
+  currentMove: MoveType;
+  playerOne: string;
+  playerTwo: string;
+  winner: WinnerType;
+  squares: SquaresType;
+};
+
+export type UpdateGameType = {
+  squares: SquaresType;
+  currentMove: MoveType;
+  winner: WinnerType;
 };

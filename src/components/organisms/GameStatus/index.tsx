@@ -1,29 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector } from "../../../state/store";
-import { player } from "../../../types/enums";
+import { MoveEnum } from "../../../types/enums";
 import { Wrapper } from "./styles";
+import * as language from "../../../localization/languageKeys";
 
 const GameStatus = () => {
-  const gameStatus = useSelector((state) => state.game);
-  const [currentPlayer, setCurrentPlayer] = useState<string>(
-    gameStatus.player1Name
-  );
-  useEffect(() => {
-    setCurrentPlayer(
-      gameStatus.player === player.cross
-        ? gameStatus.player1Name
-        : gameStatus.player2Name
-    );
-  }, [gameStatus.player, gameStatus.player1Name, gameStatus.player2Name]);
+  const currentMove = useSelector((state) => state.game.currentMove);
+  const playerOne = useSelector((state) => state.game.playerOne);
+  const playerTwo = useSelector((state) => state.game.playerTwo);
+  const currentPlayer = currentMove === MoveEnum.cross ? playerOne : playerTwo;
 
-  return (
-    <Wrapper>
-      Next move:
-      <span style={{ textTransform: "capitalize", marginLeft: 5 }}>
-        {currentPlayer}
-      </span>
-    </Wrapper>
-  );
+  return <Wrapper>{language.NEXT_MOVE(currentPlayer)}</Wrapper>;
 };
 
 export default GameStatus;

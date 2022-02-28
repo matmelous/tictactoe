@@ -4,6 +4,7 @@ exports[`renders 1`] = `
 <DocumentFragment>
   <div
     class="sc-gsDKAQ LsKEr"
+    data-testid="board-lines"
   >
     <div
       class="sc-bdvvtL gMQVwe line1"

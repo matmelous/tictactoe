@@ -1,10 +1,13 @@
 import React from "react";
-import { render, cleanup } from "@testing-library/react";
+import { render, cleanup, screen } from "@testing-library/react";
 import Cross from "../index";
 
-afterEach(cleanup);
+describe("Cross", () => {
+  afterEach(cleanup);
 
-it("renders", () => {
-  const { asFragment } = render(<Cross />);
-  expect(asFragment()).toMatchSnapshot();
+  it("renders", () => {
+    const { asFragment } = render(<Cross />);
+    expect(asFragment()).toMatchSnapshot();
+    expect(screen.getByTestId("cross")).toBeInTheDocument();
+  });
 });

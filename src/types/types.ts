@@ -1,7 +1,7 @@
-import { player } from "./enums";
+import { MoveEnum } from "./enums";
 
-export type playerType = player.cross | player.circle;
+export type MoveType = MoveEnum.cross | MoveEnum.circle;
 
-export type squaresType = {
-  [key: number]: null | playerType;
+export type SquaresType = {
+  [key: number]: null | MoveType;
 };

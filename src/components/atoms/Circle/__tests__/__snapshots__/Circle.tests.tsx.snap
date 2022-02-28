@@ -4,7 +4,7 @@ exports[`renders 1`] = `
 <DocumentFragment>
   <div
     class="sc-bdvvtL wqqDO"
-    role="circle"
+    data-testid="circle"
   />
 </DocumentFragment>
 `;

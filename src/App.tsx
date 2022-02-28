@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Game from "./Views/Game";
+import Game from "./views/Game";
 import { Provider as ReduxProvider } from "react-redux";
 import store from "./state/store";
 
