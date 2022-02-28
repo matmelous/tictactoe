@@ -42,6 +42,7 @@ export const StartGame = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <TextField
+            data-testid="player-one-name-input"
             id="player1"
             onChange={handleChangePlayerOne}
             label="Player 1 Name"
@@ -51,6 +52,7 @@ export const StartGame = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
+            data-testid="player-two-name-input"
             id="player2"
             onChange={handleChangePlayerTwo}
             label="Player 2 Name"
@@ -63,6 +65,7 @@ export const StartGame = () => {
   };
   return (
     <GameModal
+      data-testid="start-game-modal"
       open={open}
       title={title}
       description={description}

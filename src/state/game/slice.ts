@@ -1,6 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { MoveEnum } from "../../types/enums";
-import { MoveType, SquaresType } from "../../types/types";
 import { initialState } from "./constants";
 import { UpdateGameType } from "./types";
 
