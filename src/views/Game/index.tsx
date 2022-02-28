@@ -6,7 +6,6 @@ import { StartGame } from "../../components/organisms/StartGame";
 import EndGame from "../../components/organisms/EndGame";
 
 function Game() {
-
   return (
     <Wrapper>
       <GameStatus />
